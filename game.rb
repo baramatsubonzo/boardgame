@@ -13,6 +13,7 @@ class Game
 
     until game_over?
       @ui.display_board(@board)
+      @ui.display_player(@current_player.name)
       move = @current_player.get_move(@board, @ui)
       execute_move(move)
     end

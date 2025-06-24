@@ -3,6 +3,10 @@ class UI
     puts "#{board}"
   end
 
+  def display_player(player)
+    puts "#{player}"
+  end
+
   def display_result(winner)
     puts "=" * 30
     if winner.nil?

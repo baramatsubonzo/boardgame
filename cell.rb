@@ -21,8 +21,8 @@ class Cell
 		@state = nil
 	end
 
-	# 文字に変換する
+# convert to character
 	def to_s
-		@state || ''
+		@state || ' '
 	end
 end

@@ -1,5 +1,4 @@
-# console_ui.rb
-class ConsoleUI
+class UI
   def display_board(board)
     puts "#{board}"
   end

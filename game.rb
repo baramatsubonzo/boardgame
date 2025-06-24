@@ -13,7 +13,7 @@ class Game
 
     until game_over?
       @ui.display_board(@board)
-      move = current_player.get_move(@board)
+      move = @current_player.get_move(@board, @ui)
       execute_move(move)
     end
 
@@ -27,7 +27,7 @@ class Game
   end
 
   def execute_move(move)
-    move.cell.place_mark(move.mark)
+    move.cell.place(move.mark)
 
     switch_to_next_player unless game_over?
   end

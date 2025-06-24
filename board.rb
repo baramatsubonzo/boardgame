@@ -18,10 +18,10 @@ class Board
     @cells[row][col]
   end
 
-  def place_mark(row, col, mark)  # pieceからmarkに変更
+  def place_mark(row, col, mark)
     cell = cell_at(row, col)
     return false unless cell
-    cell.place_mark(mark)
+    cell.place(mark)
   end
 
   def valid_position?(row, col)

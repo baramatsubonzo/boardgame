@@ -33,6 +33,10 @@ class Game
     switch_to_next_player unless game_over?
   end
 
+  def create_ui
+    UI.new
+  end
+
   # サブクラスで実装（abstract）
   def game_over?
   end
@@ -44,9 +48,6 @@ class Game
   end
 
   def create_players
-  end
-
-  def create_ui
   end
 
   def switch_to_next_player

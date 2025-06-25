@@ -12,10 +12,6 @@ class TicTacToe < Game
     ]
   end
 
-  def create_ui
-    UI.new
-  end
-
   def game_over?
     check_winner || @board.empty_cells.empty?
   end
